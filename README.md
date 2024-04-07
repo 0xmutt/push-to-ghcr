@@ -27,7 +27,7 @@ on:
   # publish on pushes to the main branch (image tagged as "latest")
   push:
     branches:
-      - master
+      - main
 
 jobs:
   docker_publish:
