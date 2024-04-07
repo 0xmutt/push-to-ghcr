@@ -45,7 +45,7 @@ jobs:
           # optionally push to the Docker Hub (docker.io)
           # docker_io_token: ${{ secrets.DOCKER_IO_ACCESS_TOKEN }}  # see https://hub.docker.com/settings/security
           # customize the username to be used when pushing to the Docker Hub
-          # docker_io_user: foobar  # see https://github.com/macbre/push-to-ghcr/issues/14
+          # docker_io_user: foobar  # see https://github.com/0xmutt/push-to-ghcr/issues/14
 ```
 
 This action assumes that your **`Dockerfile` is in the root directory of your repository**.
@@ -71,10 +71,10 @@ The image that is pushed is labelled with `org.label-schema` [and `org.openconta
 {
   "org.label-schema.build-date": "2021-07-01T14:28:46Z",
   "org.label-schema.vcs-ref": "6f51d3d7bb7d46959a26594cb2b807573e34c546",
-  "org.label-schema.vcs-url": "https://github.com/macbre/push-to-ghcr.git",
+  "org.label-schema.vcs-url": "https://github.com/0xmutt/push-to-ghcr.git",
   "org.opencontainers.image.created": "2021-07-01T14:28:46Z",
   "org.opencontainers.image.revision": "6f51d3d7bb7d46959a26594cb2b807573e34c546",
-  "org.opencontainers.image.source": "https://github.com/macbre/push-to-ghcr.git"
+  "org.opencontainers.image.source": "https://github.com/0xmutt/push-to-ghcr.git"
 }
 ```
 
