@@ -91,8 +91,6 @@ runs:
         set -x
         >&0 docker build \
           --file ${{ inputs.dockerfile }} \
-          --cache-from ${{ inputs.repository }}/${IMAGE_NAME}:latest \
-          --build-arg BUILDKIT_INLINE_CACHE=1 \
           \
           --build-arg BUILD_DATE=${BUILD_DATE} \
           --build-arg GITHUB_SHA=${GITHUB_SHA} \
